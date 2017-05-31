@@ -1,0 +1,45 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ede;
+}
+
+#titulo{
+    font-style: italic;
+    color: #0f3
+}
+
+#subtitulos{
+    font-weight: bold;
+    color: #FF0
+}
+
+div{
+    font-size: 1.5em;
+    color: green;
+}
+
+div h2{
+    font-size: 1.0em;
+    color:blue
+}
+
+div h3{
+    font-style:oblique;
+    color: purple;
+
+}
+
+/*estilo para las validaciones (nombre apellido e email)*/
+
+.error{
+    border: double 1.2px red;
+}
+
+.no-error{
+    display: none;
+}
+
+.error-text-oculto {
+    display: block;
+    font-size: 0.5em
+}

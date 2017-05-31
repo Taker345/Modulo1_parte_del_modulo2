@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Checkbox demo</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- LINEA PARA INCLUIR JQUERY -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <div>
+        <a href="./index.html">Volver</a>
+        <p>&nbsp;</p>
+        <form>
+            <input type="checkbox" checked>Opción 1 <br>
+            <input type="checkbox">Opción 2 <br>
+            <input type="checkbox">Opción 3 <br>
+        </form>
+    </div>
+
+    <script>
+        // $(document).ready(console.log('documento cargado'));
+        $(document).ready(function() {
+            console.log($(':checkbox').length);
+            $(':checkbox').each(function (index, item) {
+                console.log('Item en la posición ' +  index + ': ', item.checked);
+            });
+        });
+    </script>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Formulario De Inscripcion</title>
+        <link rel="stylesheet" href="./css/formulario.css">
+        <script src="./js/formulario.js"></script>
+    </head>     
+    <body>
+        <div id="titulo">
+            <h2>Formulario de contacto</h2>
+            <h3>TEST</h3>
+        </div>
+        <div id="subtitulos0">    
+            <h3>Rellena el siguiente formulario para poder ponernos en contacto</h3>
+            <h2>Provando todo se aprende</h2>
+        </div>    
+        <div id="formulario">
+        <form method="POST" action="./php/crearUsuario.php">
+            <input id="txtNombre" placeholder="Escribe tu nombre" type="text" value="" onchange="quitaErrorNombre('txtNombre', 'errorNombre')">
+            <span id='errorNombre' class='no-error'>Nombre campo obligatorio</span>
+            <br>
+            <input id="txtApellido" placeholder="Escribe tu apellido" type="text" value="" onchange="quitaErrorApellido('txtApellido', 'errorApellido')">
+            <span id='errorApellido' class='no-error'>Apellido campo obligatorio</span>
+            <br>
+            <input id="txtEmail" placeholder="Escribe tu email" type="text" value="" onchange="quitaErrorEmail('txtEmail', 'errorEmail')">
+            <span id='errorEmail' class='no-error'>Email campo obligatorio</span>
+            <br>
+                <button id="btnEnviar" type="button" onclick="validar()"> 
+                    Enviar
+                </button>       
+        </form>
+        </div>
+    </body>
+</html>

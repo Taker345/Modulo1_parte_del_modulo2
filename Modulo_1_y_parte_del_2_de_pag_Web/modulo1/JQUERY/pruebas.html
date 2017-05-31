@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <!-- AGREGAMOS LA REFERENCIA PARA TRABAJAR EN LOCAL -->
+    <!--<script src="./js/jquery-1.10.2.js"></script>-->
+    <link rel="stylesheet" href="./css/pruebas.css" />
+</head>
+<body>
+
+    <div class="checkbox">
+        <input type="checkbox" value="1" /> Opción 1
+    </div>
+    <div id="segundo" class="checkbox">
+        <input type="checkbox" value="2" /> Opción 2
+    </div>
+    <div kk="checkbox">
+        <input type="checkbox" value="3" /> Opción 3
+    </div>
+    <div>
+        <input type="radio" name="grupo" value="" /> Opción 4
+    </div>
+    <div>
+        <input type="radio" name="grupo" value="" /> Opción 5
+    </div>
+    <div>
+        <input type="button"
+               value="ocultar"               
+               />
+        <!--<button type="button">enviar</button>-->
+    </div>
+        
+    <!-- AGREGAMOS LA REFERENCIA PARA USAR JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        // compruebo si jQuery está bien referenciado
+        $(document).ready(function () {
+            // trato de pillar los checkbox
+            //$(':checkbox').addClass('oculto');
+            //$('div').addClass('oculto');
+            //$('.checkbox').addClass('oculto');
+
+            //$('div[kk=checkbox]').addClass('oculto');
+            //$('#segundo').addClass('oculto');
+
+            // defino qué hacer en el evento
+            // onClick de un botón
+            $(':button').click(function () {
+                //console.log('He hecho click en el botón');
+                //$('#segundo').addClass('oculto');
+                //$(':button').val('mostrar');
+                //debugger;
+                var that = $(this);
+                //console.log('Antes de actuar -> ', $(this).val());
+                if (that.val() === 'mostrar') {
+                    that.val('ocultar');
+                    $('.checkbox').removeClass('oculto');
+                } else { // ocultar
+                    that.val('mostrar');
+                    $('.checkbox').addClass('oculto');
+                }
+                //console.log('Después de actuar -> ', $(this).val());                               
+            });
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

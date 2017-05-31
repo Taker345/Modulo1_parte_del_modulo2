@@ -1,0 +1,24 @@
+﻿.oculto {
+    display: none;
+}
+
+img {
+    width: 75px;
+    border-radius: 50px;
+}
+
+table {
+    margin: 0 auto;
+    border: solid 1px black;
+    padding: 5px 5px 5px 5px;
+}
+
+td {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+

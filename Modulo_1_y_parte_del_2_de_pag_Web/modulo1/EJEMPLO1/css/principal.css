@@ -1,0 +1,27 @@
+.titulo {
+    color: pink;
+    font-weight: bold;
+}
+
+body{
+    /*background: blue;*/    
+    background: #ede;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+    color: green;
+    font-style: italic;
+}
+
+#body{
+    border: solid 1px #000;
+}
+
+.button{
+    color: purple;
+}
+
+.input{
+    color: blue
+}

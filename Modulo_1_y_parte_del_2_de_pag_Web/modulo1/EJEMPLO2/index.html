@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Supermercado</title>
+    <meta charset="utf-8" />
+    <!--cargamos los stilos del css-->
+    <link href="css/super.css" rel="stylesheet" />
+    <!--cargamos todo lo sque utilizemos en java script-->
+    <script src="js/super.js"></script>
+</head>
+<body>
+    <div id="principal">
+        <h3>Bienvenido al supermercado</h3>
+        <div id="menu">
+            <h3>Categoria</h3>
+            <ul>
+                <li onclick="muestraMenu('idLácteos', 'Lácteos')"><a href="#">Lácteos</a></li> <!-- la a href="#" sirve para crear un enlace que al darle click salga algo/vallaotro enlace externo -->
+                <li onclick="muestraMenu('idCarnicería', 'Carnicería')"><a href="#">Carnicería</a></li>
+                <li onclick="muestraMenu('idPescadería', 'Pescadería')"><a href="#">Pescadería</a></li>
+                <li onclick="muestraMenu('idPanadería', 'Panadería')"><a href="#">Panadería</a></li>
+                <li onclick="muestraMenu('idOtros', 'Otros')"><a href="#">Otros</a></li>
+            </ul>
+            <!-- montamos las opciones de menu en un combobox-->
+            <select id="elCombo" onchange="muestraMenuCombo()">
+                <option value="">Seleccione un valor</option>
+                <option value="idLácteos">Lácteos</option>
+                <option value="idCarnicería">Carnicería</option>
+                <option value="idPescadería">Pescadería</option>
+                <option value="idPanadería">Panadería</option>
+                <option value="idOtros">Otros</option>
+            </select>
+        </div>
+        <div id="content">
+            Contenido principal
+            <div id="sub-contenido" class="oculto">
+                subcontenido
+            </div>
+        </div>
+    </div>
+</body>
+</html>

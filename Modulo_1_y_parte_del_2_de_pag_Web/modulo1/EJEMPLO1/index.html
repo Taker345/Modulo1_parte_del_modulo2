@@ -1,0 +1,39 @@
+<html>
+    <Head>
+        <title>Ejemplo 1</title>
+        <link rel="stylesheet" href="./css/principal.css">
+        <script Type="text/javascript" src="./js/principal.js"> </script>
+    </head>
+    <body>
+        <input id="txtNombre"
+               name="txtNombre"
+               type="text" 
+               placeholder="escribe tu nombre"
+               value="">
+        <input id="txtEmail"
+               name="txtEmail"
+               type="text" 
+               placeholder="escribe tu correo"
+               value="">
+        <button id="btnSaludo" 
+                type="button" 
+                onclick="Saluda()">
+            Saludos
+        </button>
+        <button id="btnSaluda"
+                type="button"
+                onclick="saludoPersonalizado('Pepito')">
+            Saluda
+        </button>
+        <button id="btnSaludoNombre"
+                type="button"
+                onclick="saludoNombre('txtNombre')">
+            Saludo Por Nombre
+        </button>         
+        <button id="btnPonTuEmail"
+                type="button"
+                onclick="tuEmailEstaCorrecto('txtEmail')">
+            Tu Correo
+        </button>         
+    </body>
+</html>

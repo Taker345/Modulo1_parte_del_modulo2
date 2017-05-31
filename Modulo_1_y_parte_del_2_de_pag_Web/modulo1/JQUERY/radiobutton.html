@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Checkbox demo</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- LINEA PARA INCLUIR JQUERY -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <div>
+        <a href="./index.html">Volver</a>
+        <p>&nbsp;</p>
+        <form name="miFormulario">
+            <div><input type="radio" name="grupo" value="1">Opción 1</div>
+            <div><input type="radio" name="grupo" value="2">Opción 2</div>
+            <div><input type="radio" name="grupo" value="3">Opción 3</div>
+            <input 
+                type="button"
+                value="borrar"
+                disabled/>
+        </form>
+    </div>
+
+    <script>
+        // $(document).ready(console.log('documento cargado'));
+        $(document).ready(function() {
+            console.log($(':radio').length);
+            $(':radio').each(function (index, item) {
+                console.log('Item en la posición ' +  index + ': ', item.checked);
+            });
+            console.log($(':radio:checked').length);
+
+            $(':radio').change(function() {
+                console.log($(this).attr('value'));
+                $(':button').removeAttr('disabled');
+                $(this).fadeOut(2);
+                var padre = $(this).parent();
+                padre.fadeOut(5);
+            })
+        });
+    </script>
+</html>

@@ -1,0 +1,29 @@
+$('') == selectores (se usan para seleccionar)
+<p>&nbsp;</p> == para que el navegador lo vea y se fuerce a poner un espacio
+
+$(':checkbox') =con esto pillame todo lo que sea un selector checkbox
+addClass() == añade el nombre de una clase 
+funcion anonima == engloba varias funciones en una (function())
+spam= sirve en caso de no tener una marca o div hacer refencia a ella
+
+POSIBLE PREGUNTA DE EXAMEN DI CUAL DE ESTOS SELECTORES ES CORRETO
+
+
+CADA DIV VA DE LADO A LADO DE LA PANTALLA
+
+JQUERY
+1 empezamos un nuevo archivo html lo llamamos x
+2 hay que preparar el html para usar jquery ===  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+va justo encima del cierre del body
+preparamos una tabla
+    <table> === tabla
+        <tr> === columnas
+            <td></td> === celdas
+            <td></td> === celdas
+        </tr>
+    </table>
+
+
+
+funcion callback
+haz esta llamada a la vuelta de lo que estas haciendo

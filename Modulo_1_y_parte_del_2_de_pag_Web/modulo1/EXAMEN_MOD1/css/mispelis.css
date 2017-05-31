@@ -1,0 +1,47 @@
+﻿
+#resultados {
+    border: solid 0px red;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.item-pelicula {
+    border: dotted 1px #9b07f5;
+    float: left;
+    margin-left: 8px;
+    margin-top: 3px;
+}
+
+img {
+    width: 175px;
+    height: 225px;
+}
+
+.contenido-pelicula {
+    float:left;
+}
+
+.datos-pelicula {
+    float: left;
+    margin-left: 5px;
+    width: 300px;
+}
+
+.cabecera {
+    float: left;
+    padding: 2px 2px 2px 2px;
+    font-weight: bold;
+}
+
+.votos {
+    float: right;
+    padding: 2px 2px 2px 2px;
+    
+}
+
+.texto-cortado {
+    width: 300px;
+    height: 200px;
+}
+
